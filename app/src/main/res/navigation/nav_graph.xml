@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/investmentFormFragment">
+
+	<fragment
+		android:id="@+id/investmentFormFragment"
+		android:name="com.gabriel.melo.testeeasynvest.gui.InvestmentFormFragment"
+		android:label="R.layout.fragment_investment_form"
+		tools:layout="@layout/fragment_investment_form">
+		<action
+			android:id="@+id/action_investmentFormFragment_to_investmentResultFragment"
+			app:destination="@id/investmentResultFragment"
+			app:enterAnim="@anim/nav_default_enter_anim"
+			app:exitAnim="@anim/nav_default_exit_anim"
+			app:popEnterAnim="@anim/nav_default_enter_anim"
+			app:popExitAnim="@anim/nav_default_exit_anim" />
+	</fragment>
+	<fragment
+		android:id="@+id/investmentResultFragment"
+		android:name="com.gabriel.melo.testeeasynvest.gui.InvestmentResultFragment"
+		android:label="InvestmentResultFragment"
+		tools:layout="@layout/fragment_investment_result">
+		<action
+			android:id="@+id/action_investmentResultFragment_to_investmentFormFragment2"
+			app:destination="@id/investmentFormFragment" />
+	</fragment>
+</navigation>

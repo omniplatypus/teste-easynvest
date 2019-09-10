@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp">
+
+	<TextView
+		android:id="@+id/rentabilidadeAnual"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView23"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textView23"
+		app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+	<TextView
+		android:id="@+id/dataResgate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView19"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textView19"
+		app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+	<TextView
+		android:id="@+id/irInvestimento"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView17"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textView17"
+		app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/resultado_da_simulacao"
+		app:layout_constraintBottom_toTopOf="@+id/brutoTotal"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/brutoTotal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textSize="30sp"
+		app:layout_constraintBottom_toTopOf="@+id/textView6"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+	<TextView
+		android:id="@+id/textView6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="30dp"
+		android:text="@string/rendimento_total_de"
+		app:layout_constraintBottom_toTopOf="@+id/textView14"
+		app:layout_constraintEnd_toStartOf="@+id/rendimentoTotal"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="packed"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/brutoTotal" />
+
+
+	<TextView
+		android:id="@+id/rendimentoTotal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="@color/verdeSimularNovamente"
+		app:layout_constraintBottom_toBottomOf="@+id/textView6"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/textView6"
+		app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+	<TextView
+		android:id="@+id/textView14"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/valor_aplicado_inicialmente"
+		app:layout_constraintBottom_toTopOf="@+id/textView15"
+		app:layout_constraintEnd_toStartOf="@+id/aplicadoInicialmente"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+	<TextView
+		android:id="@+id/textView15"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/valor_bruto_do_investimento"
+		app:layout_constraintBottom_toTopOf="@+id/textView16"
+		app:layout_constraintEnd_toStartOf="@+id/brutoInvestimento"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+	<TextView
+		android:id="@+id/textView16"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/valor_do_rendimento"
+		app:layout_constraintBottom_toTopOf="@+id/textView17"
+		app:layout_constraintEnd_toStartOf="@+id/rendimento"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+	<TextView
+		android:id="@+id/textView17"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/ir_sobre_o_investimento"
+		app:layout_constraintBottom_toTopOf="@+id/textView18"
+		app:layout_constraintEnd_toStartOf="@+id/irInvestimento"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+	<TextView
+		android:id="@+id/textView18"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="30dp"
+		android:text="@string/valor_liquido_do_investimento"
+		app:layout_constraintBottom_toTopOf="@+id/textView19"
+		app:layout_constraintEnd_toStartOf="@+id/liquidoInvestimento"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+	<TextView
+		android:id="@+id/textView19"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/data_de_resgate"
+		app:layout_constraintBottom_toTopOf="@+id/textView20"
+		app:layout_constraintEnd_toStartOf="@+id/dataResgate"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+	<TextView
+		android:id="@+id/textView20"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/dias_corridos"
+		app:layout_constraintBottom_toTopOf="@+id/textView21"
+		app:layout_constraintEnd_toStartOf="@+id/diasCorridos"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+	<TextView
+		android:id="@+id/textView21"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/rendimento_mensal"
+		app:layout_constraintBottom_toTopOf="@+id/textView22"
+		app:layout_constraintEnd_toStartOf="@+id/rendimentoMensal"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+	<TextView
+		android:id="@+id/textView22"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/percentual_do_cdi_do_investimento"
+		app:layout_constraintBottom_toTopOf="@+id/textView23"
+		app:layout_constraintEnd_toStartOf="@+id/percentualCDI"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+	<TextView
+		android:id="@+id/textView23"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/rentabilidade_anual"
+		app:layout_constraintBottom_toTopOf="@+id/textView24"
+		app:layout_constraintEnd_toStartOf="@+id/rentabilidadeAnual"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+	<TextView
+		android:id="@+id/textView24"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/rentabilidade_no_per_odo"
+		app:layout_constraintBottom_toTopOf="@+id/btn_simular"
+		app:layout_constraintEnd_toStartOf="@+id/rentabilidadePeriodo"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+	<TextView
+		android:id="@+id/aplicadoInicialmente"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView14"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView14"
+		app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+	<TextView
+		android:id="@+id/brutoInvestimento"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView15"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView15"
+		app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+	<TextView
+		android:id="@+id/rendimento"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView16"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView16"
+		app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+	<TextView
+		android:id="@+id/liquidoInvestimento"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView18"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView18"
+		app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+	<TextView
+		android:id="@+id/diasCorridos"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView20"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView20"
+		app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+	<TextView
+		android:id="@+id/rendimentoMensal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView21"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView21"
+		app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+	<TextView
+		android:id="@+id/percentualCDI"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView22"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView22"
+		app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+	<TextView
+		android:id="@+id/rentabilidadePeriodo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/placeholder_text"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toBottomOf="@+id/textView24"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintHorizontal_chainStyle="spread_inside"
+		app:layout_constraintStart_toEndOf="@+id/textView24"
+		app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+	<include
+		android:id="@+id/btn_simular"
+		layout="@layout/btn_simular"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

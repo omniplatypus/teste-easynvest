@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Teste Easynvest</string>
+	<string name="quanto_gostaria_de_aplicar">Quanto você gostaria de aplicar?*</string>
+	<string name="qual_percentual_cdi">Qual o percentual do CDI do investimento?*</string>
+	<string name="qual_vencimento">Qual a data de vencimento do investimento?*</string>
+	<string name="simular_novamente">Simular novamente</string>
+	<string name="preencha_o_valor">Preencha o valor.</string>
+	<string name="preencha_percentual_CDI">Preencha o percentual do CDI.</string>
+	<string name="preencha_a_data">Preencha a data.</string>
+	<string name="data_invalida_erro">A data deve ser após o dia de hoje.</string>
+	<string name="data_invalida">Data inválida.</string>
+	<string name="simbolo_dinheiro">R$</string>
+	<string name="hint_data">dia/mês/ano</string>
+	<string name="hint_percentual">100%</string>
+	<string name="placeholder_text">...</string>
+	<string name="resultado_da_simulacao">Resultado da simulação</string>
+	<string name="rendimento_total_de">Rendimento total de</string>
+	<string name="valor_aplicado_inicialmente">Valor aplicado inicialmente</string>
+	<string name="valor_bruto_do_investimento">Valor bruto do investimento</string>
+	<string name="valor_do_rendimento">Valor do rendimento</string>
+	<string name="ir_sobre_o_investimento">IR sobre o investimento</string>
+	<string name="valor_liquido_do_investimento">Valor líquido do investimento</string>
+	<string name="data_de_resgate">Data de resgate</string>
+	<string name="dias_corridos">Dias corridos</string>
+	<string name="rendimento_mensal">Rendimento mensal</string>
+	<string name="percentual_do_cdi_do_investimento">Percentual do CDI do investimento</string>
+	<string name="rentabilidade_anual">Rentabilidade anual</string>
+	<string name="rentabilidade_no_per_odo">Rentabilidade no período</string>
+</resources>
